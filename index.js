@@ -8,10 +8,10 @@ function handleSubmit(event) {
     formData.ref = ref
     formData.date = new Date().toDateString()
 
-    fetch("http://ip-api.com/json/")
+    fetch("https://ipapi.co/json/")
     .then(res => res.json())
     .then(data => {
-        formData.ip = data.query
+        formData.ip = data.ip
         sessionStorage.setItem('mydata', JSON.stringify(formData))
         const results = document.querySelector('.result pre');
         results.innerText = JSON.stringify(formData, null, 2);
