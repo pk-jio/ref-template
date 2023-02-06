@@ -32,6 +32,8 @@ form input {
 
 pre {
     font-size: 20px;
+    overflow-x: scroll;
+    padding-bottom: 15px;
 }
 
 .container-2 {
